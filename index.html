@@ -1,212 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Fixnexa | One App for All Local Services</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Gritcore Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Icons library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f4f6f9;
-      color: #222;
-    }
+header {
+    background: #0a58ca;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    /* HERO */
-    .hero {
-      background: linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.55)
-      ),
-      url("https://images.unsplash.com/photo-1581092919531-3c7c9c0b1d89");
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 80px 20px;
-      text-align: center;
-    }
+section {
+    padding: 20px;
+}
 
-    .hero h1 {
-      font-size: 44px;
-      margin-bottom: 10px;
-    }
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
 
-    .hero p {
-      font-size: 18px;
-      max-width: 750px;
-      margin: auto;
-      opacity: 0.95;
-    }
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
-    .title {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
+button {
+    background: #25d366;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
-    .subtitle {
-      text-align: center;
-      color: #555;
-      margin-bottom: 40px;
-    }
-
-    /* SERVICES */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .service-card {
-      background: #fff;
-      padding: 30px 20px;
-      border-radius: 14px;
-      text-align: center;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .service-card i {
-      font-size: 40px;
-      color: #0b5ed7;
-      margin-bottom: 15px;
-    }
-
-    .service-card h3 {
-      margin-bottom: 10px;
-    }
-
-    .service-card p {
-      font-size: 14px;
-      color: #555;
-    }
-
-    /* CTA */
-    .cta {
-      background: #fff;
-      padding: 50px 20px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 10px 26px rgba(0,0,0,0.1);
-    }
-
-    .cta h2 {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    .cta p {
-      color: #555;
-      margin-bottom: 25px;
-    }
-
-    .whatsapp-btn {
-      background: #25D366;
-      color: #fff;
-      padding: 16px 34px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      display: inline-block;
-    }
-
-    footer {
-      background: #111;
-      color: #aaa;
-      padding: 25px 15px;
-      text-align: center;
-      font-size: 14px;
-      margin-top: 60px;
-    }
-  </style>
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>Fixnexa</h1>
-  <p>
-    One platform for all local services — trusted professionals,
-    fast response and reliable solutions. Built proudly from Raigarh, India.
-  </p>
-</div>
+<header>
+    <h1>Gritcore Services</h1>
+    <p>Plumber • Electrician • Carpenter • Doctor</p>
+</header>
 
-<!-- SERVICES -->
 <section>
-  <h2 class="title">Our Core Services</h2>
-  <p class="subtitle">
-    Everything you need — home, repair, construction & emergency support.
-  </p>
+    <h2 style="text-align:center;">Our Services</h2>
 
-  <div class="services">
-    <div class="service-card">
-      <i class="fas fa-bolt"></i>
-      <h3>Electrician</h3>
-      <p>Wiring, fittings, power and electrical repairs.</p>
+    <div class="services">
+
+        <div class="card">
+            <img src="images/plumber.jpg">
+            <h3>Plumber Service</h3>
+            <p>24x7 water & pipe solution</p>
+            <a href="https://wa.me/919301747206">
+                <button>WhatsApp</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="images/electrician.jpg">
+            <h3>Electrician Service</h3>
+            <p>Home & commercial wiring</p>
+            <a href="https://wa.me/919301747206">
+                <button>WhatsApp</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="images/carpenter.jpg">
+            <h3>Carpenter Service</h3>
+            <p>Furniture & wood work</p>
+            <a href="https://wa.me/919301747206">
+                <button>WhatsApp</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="images/doctor.jpg">
+            <h3>Doctor Consultation</h3>
+            <p>Online & clinic support</p>
+            <a href="https://wa.me/919301747206">
+                <button>WhatsApp</button>
+            </a>
+        </div>
+
     </div>
-
-    <div class="service-card">
-      <i class="fas fa-faucet"></i>
-      <h3>Plumber</h3>
-      <p>Leakage fixing, bathroom and pipeline services.</p>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-snowflake"></i>
-      <h3>AC Repair</h3>
-      <p>AC service, installation and maintenance.</p>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-broom"></i>
-      <h3>Cleaning</h3>
-      <p>Home, tank, pest control and deep cleaning.</p>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-car"></i>
-      <h3>Vehicle Help</h3>
-      <p>Bike, car repair and roadside assistance.</p>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-hard-hat"></i>
-      <h3>Construction</h3>
-      <p>Mason, contractor, painting and building work.</p>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section>
-  <div class="cta">
-    <h2>Need a Service Now?</h2>
-    <p>Chat directly with Fixnexa support on WhatsApp.</p>
-
-    <a class="whatsapp-btn" href="https://wa.me/919301747206" target="_blank">
-      Chat on WhatsApp
-    </a>
-  </div>
 </section>
 
 <footer>
-  © 2026 Fixnexa | Founded by Kanha Singh (The Ghost) | Raigarh, India
+    <p>© 2026 Gritcore | All Rights Reserved</p>
 </footer>
 
 </body>
