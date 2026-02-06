@@ -2,122 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fixnexa | One Solution for Every Service</title>
+  <title>Fixnexa | One App for All Local Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body{
-      margin:0;
-      font-family: Arial, Helvetica, sans-serif;
-      background:#0f172a;
-      color:#fff;
+    * {
+      box-sizing: border-box;
     }
-    header{
-      background:linear-gradient(90deg,#2563eb,#0ea5e9);
-      padding:40px 20px;
-      text-align:center;
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f9;
+      color: #222;
     }
-    header h1{
-      font-size:36px;
-      margin:0;
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0b5ed7, #084298);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
     }
-    header p{
-      font-size:18px;
-      margin-top:10px;
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
     }
-    section{
-      padding:40px 20px;
-      max-width:1100px;
-      margin:auto;
+    header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      opacity: 0.95;
     }
-    .card{
-      background:#020617;
-      border:1px solid #1e293b;
-      border-radius:12px;
-      padding:25px;
-      margin-bottom:20px;
+
+    /* SECTION */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
     }
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 15px;
     }
-    h2{
-      color:#38bdf8;
+    .section-subtitle {
+      text-align: center;
+      color: #555;
+      max-width: 700px;
+      margin: auto auto 40px;
     }
-    footer{
-      background:#020617;
-      text-align:center;
-      padding:20px;
-      color:#94a3b8;
-      font-size:14px;
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
-    .btn{
-      display:inline-block;
-      margin-top:15px;
-      padding:12px 20px;
-      background:#22c55e;
-      color:#000;
-      border-radius:8px;
-      text-decoration:none;
-      font-weight:bold;
+    .service-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+    }
+    .service-card h3 {
+      margin-top: 0;
+      color: #0b5ed7;
+    }
+    .service-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* CTA */
+    .cta {
+      background: #ffffff;
+      text-align: center;
+      border-radius: 16px;
+      padding: 50px 20px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    }
+    .cta h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .cta p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .whatsapp-btn {
+      background: #25D366;
+      color: #fff;
+      padding: 16px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 25px 15px;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>FIXNEXA</h1>
-  <p>One Solution for Every Service</p>
-  <p>Built from Raigarh, Scaling to India 🚀</p>
+  <h1>Fixnexa</h1>
+  <p>
+    Fixnexa is a next-generation local service platform connecting
+    customers with verified professionals — fast, reliable and trusted.
+    Proudly built from Raigarh, India.
+  </p>
 </header>
 
 <section>
-  <div class="card">
-    <h2>About Fixnexa</h2>
-    <p>
-      Fixnexa is an all-in-one service platform that connects users with verified
-      local service providers like electricians, plumbers, mechanics, doctors,
-      contractors and many more — instantly.
-    </p>
+  <h2 class="section-title">What We Offer</h2>
+  <p class="section-subtitle">
+    All essential services at one place — home, repair, construction,
+    emergency and more.
+  </p>
+
+  <div class="services">
+    <div class="service-card">
+      <h3>Home Services</h3>
+      <p>Electrician, plumber, carpenter, AC repair and all household needs.</p>
+    </div>
+    <div class="service-card">
+      <h3>Cleaning & Maintenance</h3>
+      <p>Home cleaning, water tank cleaning, pest control and maintenance.</p>
+    </div>
+    <div class="service-card">
+      <h3>Vehicle Assistance</h3>
+      <p>Bike & car repair, roadside help and emergency support.</p>
+    </div>
+    <div class="service-card">
+      <h3>Construction Services</h3>
+      <p>Contractors, masons, painters, interior and building services.</p>
+    </div>
+    <div class="service-card">
+      <h3>Emergency Support</h3>
+      <p>Quick response services when you need help the most.</p>
+    </div>
+    <div class="service-card">
+      <h3>Trusted Professionals</h3>
+      <p>Verified service providers with transparent pricing.</p>
+    </div>
   </div>
+</section>
 
-  <div class="grid">
-    <div class="card">
-      <h2>Founder</h2>
-      <p><b>Kanha Singh (The Ghost)</b></p>
-      <p>Visionary entrepreneur focused on building scalable local-to-global platforms.</p>
-    </div>
+<section>
+  <div class="cta">
+    <h2>Need Any Service Right Now?</h2>
+    <p>Talk directly with Fixnexa support and get instant assistance.</p>
 
-    <div class="card">
-      <h2>Managing Director</h2>
-      <p><b>Karan Pandey</b></p>
-      <p>Operations & growth strategy lead.</p>
-    </div>
-
-    <div class="card">
-      <h2>CEO</h2>
-      <p><b>Harshit Pal</b></p>
-      <p>Execution, partnerships & technology.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Why Invest in Fixnexa?</h2>
-    <ul>
-      <li>Huge local services market</li>
-      <li>Low competition in Tier-2 & Tier-3 cities</li>
-      <li>Multiple revenue streams</li>
-      <li>Scalable tech-based model</li>
-    </ul>
-    <a class="btn" href="mailto:fixnexa730@gmail.com">Contact for Investment</a>
+    <a class="whatsapp-btn" href="https://wa.me/919301747206" target="_blank">
+      Chat on WhatsApp
+    </a>
   </div>
 </section>
 
 <footer>
-  © 2026 Fixnexa | Raigarh, Chhattisgarh  
-  <br>
-  Contact: fixnexa730@gmail.com
+  © 2026 Fixnexa | Founded by Kanha Singh (The Ghost) | Raigarh, India
 </footer>
 
 </body>
-      </html>
+</html>
