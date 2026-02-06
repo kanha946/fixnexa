@@ -5,10 +5,10 @@
   <title>Fixnexa | One App for All Local Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Icons library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -16,42 +16,48 @@
       color: #222;
     }
 
-    /* HEADER */
-    header {
-      background: linear-gradient(135deg, #0b5ed7, #084298);
+    /* HERO */
+    .hero {
+      background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+      ),
+      url("https://images.unsplash.com/photo-1581092919531-3c7c9c0b1d89");
+      background-size: cover;
+      background-position: center;
       color: #fff;
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
-    header h1 {
-      font-size: 42px;
+
+    .hero h1 {
+      font-size: 44px;
       margin-bottom: 10px;
-      letter-spacing: 1px;
     }
-    header p {
+
+    .hero p {
       font-size: 18px;
-      max-width: 700px;
+      max-width: 750px;
       margin: auto;
       opacity: 0.95;
     }
 
-    /* SECTION */
     section {
       padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
     }
 
-    .section-title {
+    .title {
       text-align: center;
       font-size: 32px;
       margin-bottom: 15px;
     }
-    .section-subtitle {
+
+    .subtitle {
       text-align: center;
       color: #555;
-      max-width: 700px;
-      margin: auto auto 40px;
+      margin-bottom: 40px;
     }
 
     /* SERVICES */
@@ -60,20 +66,30 @@
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
+
     .service-card {
       background: #fff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
+      padding: 30px 20px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
     }
+
     .service-card:hover {
       transform: translateY(-6px);
     }
-    .service-card h3 {
-      margin-top: 0;
+
+    .service-card i {
+      font-size: 40px;
       color: #0b5ed7;
+      margin-bottom: 15px;
     }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+    }
+
     .service-card p {
       font-size: 14px;
       color: #555;
@@ -81,24 +97,27 @@
 
     /* CTA */
     .cta {
-      background: #ffffff;
-      text-align: center;
-      border-radius: 16px;
+      background: #fff;
       padding: 50px 20px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.1);
     }
+
     .cta h2 {
       font-size: 30px;
       margin-bottom: 10px;
     }
+
     .cta p {
       color: #555;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
+
     .whatsapp-btn {
       background: #25D366;
       color: #fff;
-      padding: 16px 30px;
+      padding: 16px 34px;
       border-radius: 50px;
       text-decoration: none;
       font-size: 18px;
@@ -106,67 +125,79 @@
       display: inline-block;
     }
 
-    /* FOOTER */
     footer {
       background: #111;
       color: #aaa;
       padding: 25px 15px;
       text-align: center;
       font-size: 14px;
+      margin-top: 60px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
   <h1>Fixnexa</h1>
   <p>
-    Fixnexa is a next-generation local service platform connecting
-    customers with verified professionals — fast, reliable and trusted.
-    Proudly built from Raigarh, India.
+    One platform for all local services — trusted professionals,
+    fast response and reliable solutions. Built proudly from Raigarh, India.
   </p>
-</header>
+</div>
 
+<!-- SERVICES -->
 <section>
-  <h2 class="section-title">What We Offer</h2>
-  <p class="section-subtitle">
-    All essential services at one place — home, repair, construction,
-    emergency and more.
+  <h2 class="title">Our Core Services</h2>
+  <p class="subtitle">
+    Everything you need — home, repair, construction & emergency support.
   </p>
 
   <div class="services">
     <div class="service-card">
-      <h3>Home Services</h3>
-      <p>Electrician, plumber, carpenter, AC repair and all household needs.</p>
+      <i class="fas fa-bolt"></i>
+      <h3>Electrician</h3>
+      <p>Wiring, fittings, power and electrical repairs.</p>
     </div>
+
     <div class="service-card">
-      <h3>Cleaning & Maintenance</h3>
-      <p>Home cleaning, water tank cleaning, pest control and maintenance.</p>
+      <i class="fas fa-faucet"></i>
+      <h3>Plumber</h3>
+      <p>Leakage fixing, bathroom and pipeline services.</p>
     </div>
+
     <div class="service-card">
-      <h3>Vehicle Assistance</h3>
-      <p>Bike & car repair, roadside help and emergency support.</p>
+      <i class="fas fa-snowflake"></i>
+      <h3>AC Repair</h3>
+      <p>AC service, installation and maintenance.</p>
     </div>
+
     <div class="service-card">
-      <h3>Construction Services</h3>
-      <p>Contractors, masons, painters, interior and building services.</p>
+      <i class="fas fa-broom"></i>
+      <h3>Cleaning</h3>
+      <p>Home, tank, pest control and deep cleaning.</p>
     </div>
+
     <div class="service-card">
-      <h3>Emergency Support</h3>
-      <p>Quick response services when you need help the most.</p>
+      <i class="fas fa-car"></i>
+      <h3>Vehicle Help</h3>
+      <p>Bike, car repair and roadside assistance.</p>
     </div>
+
     <div class="service-card">
-      <h3>Trusted Professionals</h3>
-      <p>Verified service providers with transparent pricing.</p>
+      <i class="fas fa-hard-hat"></i>
+      <h3>Construction</h3>
+      <p>Mason, contractor, painting and building work.</p>
     </div>
   </div>
 </section>
 
+<!-- CTA -->
 <section>
   <div class="cta">
-    <h2>Need Any Service Right Now?</h2>
-    <p>Talk directly with Fixnexa support and get instant assistance.</p>
+    <h2>Need a Service Now?</h2>
+    <p>Chat directly with Fixnexa support on WhatsApp.</p>
 
     <a class="whatsapp-btn" href="https://wa.me/919301747206" target="_blank">
       Chat on WhatsApp
